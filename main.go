@@ -27,5 +27,6 @@ func main (){
 	operatorsTest()
 	userInfo()
 	memoryCheck()
+	comma()
 
 }
