@@ -32,4 +32,8 @@ func main() {
 	monthCase(1)
 	stringLen()
 	test2()
+	counterCon()
+	rangeCheck()
+	continueLoop()
+	fixbuss()
 }
