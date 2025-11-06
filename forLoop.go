@@ -1,38 +1,20 @@
 package main
 
-import (
-	"fmt"
-	"strings"
-)
+import "fmt"
 
-func userReg() {
-
-	var FName string
-	var LName string
-	var age int
-	users := []string{}
-for {
-	fmt.Println("Your first name:")
-	fmt.Scan(&FName)
-
-	fmt.Println("Your Last Name:")
-	fmt.Scan(&LName)
-
-	fmt.Println("How old are you?")
-	fmt.Scan(&age)
-	users = append(users, FName + " " + LName)
-
-
-	firstNames := []string{}
-
-	for _, regUser := range users{
-		var names = strings.Fields(regUser)
-		var userFirstname = names[0]
-		firstNames = append(firstNames,userFirstname )
-	}
-	// fmt.Println("Our registered users are %v\n",firstNames )
-	fmt.Printf("The type is %T",firstNames)
-	fmt.Printf("The type is %v",len(firstNames))
+func stringLen() {
+	str:= "for loop test"
+	fmt.Printf("The string has a length of %d\n", len(str))
+	for i := 0; i < len(str); i++ {
+		fmt.Printf("character at position %d is : %c\n", i, str[i])
 	}
 
+}
+
+func test2(){
+	str2:= "I got the first one"
+	fmt.Printf("this string has a length of %d\n", len(str2))
+	 for ix:=0; ix < len(str2); ix++{
+		fmt.Printf("The character at %d is : %c\n", ix, str2[ix])
+	}
 }

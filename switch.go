@@ -35,3 +35,17 @@ func testCase(){
 	fmt.Println("Name is %s", name)
 	}
 }
+
+func monthCase (month int)  {
+	switch month {
+	case 1,2,12:
+		fmt.Println("winter")
+	case 3,4,5 :
+		fmt.Println("spring")
+	case  6,7,8 :
+		fmt.Println("summer")
+	case  9,10,11:
+	fmt.Println("autum")
+	default: fmt.Println("sesaon unknown")
+	}
+}
