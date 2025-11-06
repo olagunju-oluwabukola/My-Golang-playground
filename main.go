@@ -28,5 +28,7 @@ func main (){
 	userInfo()
 	memoryCheck()
 	comma()
+	switchTest()
+	testCase()
 
 }
