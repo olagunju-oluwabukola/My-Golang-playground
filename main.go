@@ -36,4 +36,5 @@ func main() {
 	rangeCheck()
 	continueLoop()
 	fixbuss()
+	funTest()
 }
