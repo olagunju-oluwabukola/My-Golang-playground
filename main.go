@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// var firstName string
 	// var lastName string
@@ -37,4 +39,6 @@ func main() {
 	continueLoop()
 	fixbuss()
 	funTest()
+	f3()
+	fmt.Println(product(10, 12, 50))
 }
