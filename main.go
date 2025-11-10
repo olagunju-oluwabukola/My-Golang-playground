@@ -43,4 +43,6 @@ func main() {
 	fmt.Println(product(10, 12, 50))
 	func1()
 	forTest()
+	funcB()
+	vowelCount()
 }

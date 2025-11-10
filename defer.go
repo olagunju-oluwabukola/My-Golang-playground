@@ -19,3 +19,24 @@ func forTest(){
 		fmt.Printf("!defer: %d\n", i)
 	}
 }
+
+func trace ( s string,){
+	fmt.Println("Entering:",s)
+}
+
+func untrace (s string){
+	fmt.Println("leaving :",s)
+}
+
+func funcA(){
+	trace("a")
+	defer untrace("a")
+	fmt.Println("in a")
+}
+
+func funcB(){
+	trace("b")
+	defer untrace("b")
+	fmt.Println("in b")
+	funcA()
+}
