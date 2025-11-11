@@ -36,4 +36,18 @@ func f3 (){
 func product (x,y,z int) int{
 	sum, _  :=  fmt.Println(x*y*z)
 	return sum
+
+}
+
+// fplus := func(x, y int) int { return x + y }
+
+func f(){
+	for i:=0; i<4; i++{
+		g:= func(i int){
+			fmt.Printf("%d", i)
+		}
+
+		g(i)
+		fmt.Printf("-is a type of %T and has the value of %v\n", g,g)
+	}
 }

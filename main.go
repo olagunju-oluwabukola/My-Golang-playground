@@ -45,4 +45,5 @@ func main() {
 	forTest()
 	funcB()
 	vowelCount()
+	f()
 }
