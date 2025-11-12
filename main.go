@@ -48,4 +48,7 @@ func main() {
 	f()
 	isEven()
 	fmt.Println(adder(2,4))
+	loop()
+	randomNum()
+	tCon()
 }

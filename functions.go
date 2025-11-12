@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func funTest() {
 	lastName := "johnny"
@@ -55,4 +58,12 @@ func f(){
 func adder(a,b int) int{
 	result := a+b
 	return result
+}
+
+func randomNum (){
+	var num = rand.Intn(10) +1
+	fmt.Printf("The random num is %v\n", num)
+
+	 num = rand.Intn(10) +1
+	fmt.Printf("The random num is %v\n", num)
 }

@@ -80,3 +80,13 @@ func isEven(){
 		}
 	}
 }
+
+func loop(){
+
+	s:= "golang"
+	fmt.Println(s[0:3])
+	for _, char:= range "Hello"{
+		fmt.Printf("%c", char)
+	}
+}
+
