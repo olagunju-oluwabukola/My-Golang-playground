@@ -51,3 +51,8 @@ func f(){
 		fmt.Printf("-is a type of %T and has the value of %v\n", g,g)
 	}
 }
+
+func adder(a,b int) int{
+	result := a+b
+	return result
+}

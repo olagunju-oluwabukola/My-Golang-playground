@@ -46,4 +46,6 @@ func main() {
 	funcB()
 	vowelCount()
 	f()
+	isEven()
+	fmt.Println(adder(2,4))
 }
