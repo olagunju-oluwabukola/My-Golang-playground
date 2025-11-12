@@ -50,5 +50,9 @@ func main() {
 	fmt.Println(adder(2,4))
 	loop()
 	randomNum()
-	tCon()
+	intCon()
+	fltCon()
+	int2str()
+	strCon()
+	str()
 }
