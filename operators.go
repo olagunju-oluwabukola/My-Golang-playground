@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -28,4 +29,11 @@ func operatorsTest() {
 	lower = strings.ToLower(userd)
 	fmt.Printf("This is for uppercase : %s\n", upper)
 	upper= strings.ToUpper(userd)
+
+
+	var w int64 = 10
+	var r string = "11"
+	 xe, _ := strconv.Atoi(r)
+
+	fmt.Println(w+ int64(xe))
 }

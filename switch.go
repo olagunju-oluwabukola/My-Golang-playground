@@ -32,7 +32,7 @@ func testCase(){
 		 fmt.Println("somehow close")
 
 	default:
-	fmt.Println("Name is %s", name)
+	fmt.Printf("Name is %s", name)
 	}
 }
 
@@ -48,4 +48,15 @@ func monthCase (month int)  {
 	fmt.Println("autum")
 	default: fmt.Println("sesaon unknown")
 	}
+}
+func switchCheck(){
+	switch day:="wednesday"; day{
+	case "Tuesday":
+		fmt.Println("the day before is the correct answer")
+
+case  "Friday":
+	fmt.Println("weekend came early")
+
+default : fmt.Printf("The day is %v\n",day )
+}
 }

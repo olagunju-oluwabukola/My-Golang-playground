@@ -55,4 +55,6 @@ func main() {
 	int2str()
 	strCon()
 	str()
+	ageCheck()
+	switchCheck()
 }
