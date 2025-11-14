@@ -57,4 +57,6 @@ func main() {
 	str()
 	ageCheck()
 	switchCheck()
+	fallthroughCheck()
+	closures()
 }

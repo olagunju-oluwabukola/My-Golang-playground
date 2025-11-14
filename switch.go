@@ -60,3 +60,22 @@ case  "Friday":
 default : fmt.Printf("The day is %v\n",day )
 }
 }
+
+
+func fallthroughCheck(){
+	X:=10
+	switch{
+	case X < 0:
+	fmt.Println("It's a negative number")
+	fallthrough
+     case X > 0:
+		fmt.Printf("The integer is %v\n", X)
+		fallthrough
+	case X == 0:
+		fmt.Println("Integer is less than zero")
+
+
+	default: fmt.Println("Keep trying")
+
+	}
+}

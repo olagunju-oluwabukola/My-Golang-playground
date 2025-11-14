@@ -67,3 +67,36 @@ func randomNum (){
 	 num = rand.Intn(10) +1
 	fmt.Printf("The random num is %v\n", num)
 }
+
+
+func mul(g1,g2 int) (int, int, int) {
+	// return  g1* g2, g1 + g2, g1- g2
+	a1 := g1* g2
+	a2 :=  g1 + g2
+	a3 :=g1- g2
+
+	return a1,a2,a3
+}
+
+// closures
+func text2(myfunc func(int)int){
+	fmt.Println(myfunc(4))
+
+	t:= func (i int) int {
+	return i*i
+}
+
+fmt.Println(t(5))
+
+}
+
+
+
+func closures(){
+	test := func (x int)int {
+		return x * -1
+	}
+	// fmt.Println(test)
+	text2(test)
+	fmt.Println(mul(4,7))
+}
