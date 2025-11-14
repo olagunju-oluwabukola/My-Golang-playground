@@ -59,4 +59,5 @@ func main() {
 	switchCheck()
 	fallthroughCheck()
 	closures()
+	Arr1()
 }

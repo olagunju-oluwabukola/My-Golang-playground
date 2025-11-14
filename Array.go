@@ -23,3 +23,31 @@ func mySlice (){
 	fmt.Println(len(models))
 
 }
+func Arr1(){
+	var arr1 [5] int
+
+	for i:=0; i < len(arr1); i++{
+		arr1[i] = i*2
+		fmt.Printf("the value of array at index %d is %d\n", i, arr1[i])
+	}
+
+	// for i:=0; i < len(arr1); i++{
+	// 	fmt.Printf("the value of array at index %d is %d\n", i, arr1[i])
+	// }
+fmt.Println("------------with range------------")
+	for i := range arr1{
+		arr1[i] = i *2
+
+		fmt.Printf("the value of array at index %d is %d\n", i, arr1[i])
+	}
+
+}
+
+
+
+
+
+
+
+
+
