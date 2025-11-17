@@ -43,9 +43,37 @@ fmt.Println("------------with range------------")
 
 }
 
+func mainArray(){
+	list := [4]int{10, 76, 90,75,}
+	x:= sum(&list)
+	fmt.Printf("the sum of the array is: %d", x)
+}
+	func sum(a *[4]int) (sum int){
+		// for i:= 0; i< len(*a); i++ {
+		// 	sum += (*a)[i]
+		// }
+		// return
 
+		for _, v :=range a {
+			sum += v
+		}
+		return
+	}
 
+func mainLoop(){
+	var numbers [14] int
 
+ loopArray(&numbers)
+
+	fmt.Printf("lsist of numbers : %d\n", numbers)
+}
+
+func loopArray (b *[14] int){
+	for i:=0; i < len(b); i++{
+		(*b)[i] = i
+	}
+
+}
 
 
 

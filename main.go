@@ -60,4 +60,7 @@ func main() {
 	fallthroughCheck()
 	closures()
 	Arr1()
+	mainArray()
+	mainLoop()
+	sliceCheck()
 }
