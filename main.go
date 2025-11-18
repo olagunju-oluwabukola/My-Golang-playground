@@ -66,4 +66,8 @@ func main() {
 	makeSlice()
 	bs()
 	makerange()
+	rs()
+	mian()
 }
+
+

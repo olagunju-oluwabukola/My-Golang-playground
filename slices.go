@@ -68,3 +68,17 @@ for ix, value := range slice1{
 	fmt.Printf("the slice at index [%d] has the value of %d\n", ix, value)
 }
 }
+
+func rs(){
+	value := 0
+	screen := [2][2]int{}
+
+	for row :=range screen{
+		for column := range screen{
+			screen [row] [column] = value
+			value = value+1
+			fmt.Println(screen[row][column], "")
+		}
+		fmt.Printf("\n")
+	}
+}
