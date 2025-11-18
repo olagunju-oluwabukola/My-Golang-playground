@@ -63,4 +63,7 @@ func main() {
 	mainArray()
 	mainLoop()
 	sliceCheck()
+	makeSlice()
+	bs()
+	makerange()
 }

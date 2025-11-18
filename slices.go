@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"bytes"
+	"fmt"
+)
 
 func sliceCheck() {
 	var slice [5]int
@@ -20,5 +23,48 @@ func sliceCheck() {
 }
 
 func makeSlice(){
-	slice1 := [10] int {1,2,3,}
+	// array1 := [10] int {1,2,3,}
+	// sli1 := make([]int, 10)
+
+	// multidimensional array/slice
+
+values := [][]int{}
+
+row1 := []int {1,2,3}
+row2 := []int{5,6,7}
+
+values = append(values, row1)
+values = append(values, row2)
+fmt.Println("row 1:")
+fmt.Println(values[0])
+fmt.Println("row2")
+fmt.Println(values[1])
+
+fmt.Println(values[1][1])//prints second element of the second row
+fmt.Println(values)
+fmt.Println(len(values))
+fmt.Println(cap(values))
+}
+
+
+func bs(){
+var b bytes.Buffer
+
+b.WriteString("Hello")
+b.WriteString("world")
+fmt.Fprintf(&b, " the edj;ewdl\n")
+b.WriteString("i hope i know")
+fmt.Println(b.String())
+}
+
+func makerange(){
+slice1:= make([]int, 4)
+slice1[0] = 1
+slice1[1] = 9
+slice1[2] = 11
+slice1[3] = 19
+
+for ix, value := range slice1{
+	fmt.Printf("the slice at index [%d] has the value of %d\n", ix, value)
+}
 }
