@@ -68,6 +68,8 @@ func main() {
 	makerange()
 	rs()
 	mian()
+	sc()
+mainInsert()
 }
 
 

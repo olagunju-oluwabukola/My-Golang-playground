@@ -5,10 +5,9 @@ import (
 )
 var (
 	galleryArray [10] string
-// Initialize a slice to store image filenames
  gallery = galleryArray[:0]
 )
-// Upload image function
+
 func uploadImage(filename string) {
   if len(gallery) >= 10{
 	fmt.Println("upload size exceeded")
@@ -18,7 +17,6 @@ gallery = append(gallery,filename )
 fmt.Println("uploaded:", filename)
 }
 
-// Delete image function
 func deleteImage(filename string) {
 index :=-1
 for i, img := range gallery{
@@ -36,7 +34,6 @@ gallery = gallery[:len(gallery)-1]
 fmt.Println("deleted: ", filename)
 }
 
-// List images function
 func listImages() {
 if len(gallery) == 0{
 	fmt.Println("gallery is empty")

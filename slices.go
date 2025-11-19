@@ -82,3 +82,34 @@ func rs(){
 		fmt.Printf("\n")
 	}
 }
+
+func enlarge(s []int, factor int) []int{
+	ns:= make([]int, len(s)*factor)
+	copy(ns, s)
+	return ns
+}
+var s [] int
+func sc (){
+	s = [] int {1,2,3}
+	fmt.Println("the lenght of s before enlarging is:", len(s))
+	fmt.Println(s)
+	s = enlarge(s,5)
+	fmt.Println(s)
+		fmt.Println("the lenght of s after enlarging is:", len(s))
+
+}
+func mainInsert(){
+	s := [] string{"m", "n", "o", "p", "q", "r"}
+	in:= []string {"a", "b", "c"}
+	res:= insertSlice(s, in, 0)
+	fmt.Println(res)
+	res= insertSlice(s,in,3)
+	fmt.Println(res)
+}
+func insertSlice (slice, insertion []string, index int) []string{
+	result:= make([]string, len(slice) + len(insertion))
+	at:= copy(result, slice[:index])
+	at+= copy(result[at:], insertion)
+	copy(result[at:], slice[index:])
+	return result
+	}
