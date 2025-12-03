@@ -96,3 +96,40 @@ func mapSix (){
 		}
 	}
 }
+var days = map[int]string {
+		1:"Monday",
+		2: "Tuesday",
+		3: "Wedmesday",
+		4: "Thursday",
+		5:"Friday",
+		6: "Saturday",
+		7: "Sunday",}
+
+
+
+		func finder(n int) string{
+			val, isPresent := (days[n])
+			if isPresent {
+				return val
+			} else{
+				return "wrong key"
+			}
+		}
+
+		func dayFinder (){
+			n := 4
+			 fmt.Println(n, ":", finder(n))
+
+			 n = 8
+			 fmt.Println(n, ":", finder(n))
+		}
+
+func mapSlice (){
+	var items = make([] map [int] int, 5)
+	for i:= range items{
+		items[i] = make(map [int] int, 1)
+		items[i][1] = 2
+		fmt.Printf("value of items %v\n", items)
+	}
+
+}

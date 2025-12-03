@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// var firstName string
@@ -80,6 +82,8 @@ mapCheck()
 randomNumber()
 mapRange()
 mapSix()
+dayFinder()
+mapSlice()
 }
 
 
