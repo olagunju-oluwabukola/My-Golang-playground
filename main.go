@@ -70,6 +70,11 @@ func main() {
 	mian()
 	sc()
 mainInsert()
+strTest()
+strMut()
+arry()
+bubleMain()
+reverseMain()
 }
 
 

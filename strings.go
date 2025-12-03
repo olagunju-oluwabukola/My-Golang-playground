@@ -42,7 +42,7 @@ return num
 }
 
 func userInfo () {
-    // Test your functions here
+
 	fmt.Println("strings")
     fmt.Println(IdentifyPrefixPostfix(".io", "evangeline@educative.io"))        // true
     fmt.Println(IdentifyPrefixPostfix("UID", "UID-0123"))                       // true

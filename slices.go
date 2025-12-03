@@ -113,3 +113,28 @@ func insertSlice (slice, insertion []string, index int) []string{
 	copy(result[at:], slice[index:])
 	return result
 	}
+
+	func strTest(){
+	str := "I am zerubabel"
+	substr := str[1:5]
+	fmt.Println(substr)
+	}
+
+	func  strMut(){
+		s:= "Hello"
+		c := []byte(s)
+		c[0] = 'Y'
+		S2 := string(c)
+		fmt.Println(S2)
+
+		sl1 := []int {1,2,34,10}
+		sl2 := []int {23,13,45,6}
+		sl3 := append(sl1, sl2...)
+		fmt.Println(sl3)
+
+	}
+var arr []byte = []byte{'a','b','a','a','a','c','d','e','f','g'}
+func arry (){
+	arrl := make([]byte,len(arr))
+	fmt.Println(arrl)
+}
