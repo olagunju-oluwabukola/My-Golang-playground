@@ -75,6 +75,11 @@ strMut()
 arry()
 bubleMain()
 reverseMain()
+mapMain()
+mapCheck()
+randomNumber()
+mapRange()
+mapSix()
 }
 
 
