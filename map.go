@@ -105,8 +105,6 @@ var days = map[int]string {
 		6: "Saturday",
 		7: "Sunday",}
 
-
-
 		func finder(n int) string{
 			val, isPresent := (days[n])
 			if isPresent {
