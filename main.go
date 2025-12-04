@@ -84,6 +84,8 @@ mapRange()
 mapSix()
 dayFinder()
 mapSlice()
+revMain()
+initialMain()
 }
 
 

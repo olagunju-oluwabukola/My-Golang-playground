@@ -53,3 +53,26 @@ func userInfo () {
     fmt.Println(TrimAndSplitUserID("UID-0123"))                                 // 0123
     fmt.Println(ConvertStringToInt("123"))                                      // 123
 }
+
+func getInitial(n string) (string, string){
+s := strings.ToUpper(n)
+ names:= strings.Split(s, " ")
+
+ var initial []string
+
+ for _, v := range names{
+    initial = append(initial, v[:1])
+}
+if len(initial) > 1{
+    return initial[0], initial[1]
+} else{
+    return initial[0], "_"
+}
+}
+
+func initialMain(){
+   name1, name2 :=  getInitial("Hello World")
+   fmt.Println(name1, name2)
+
+}
+
