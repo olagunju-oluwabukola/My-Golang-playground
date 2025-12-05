@@ -86,6 +86,7 @@ dayFinder()
 mapSlice()
 revMain()
 initialMain()
+RemoveHyphenMain()
 }
 
 
