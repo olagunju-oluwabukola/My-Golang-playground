@@ -5,6 +5,7 @@ import (
 	"regexp"
 )
 
+//removes hyphen from the numbers
 func RemoveHyphens(text string) string {
 	re := regexp.MustCompile(`\d{3}-\d{3}-\d{4}`)
 	updatedText := re.ReplaceAllStringFunc(text, func(match string) string{

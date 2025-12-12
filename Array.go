@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func myArray  (){
 	var users [50] string
@@ -76,6 +79,25 @@ func loopArray (b *[14] int){
 }
 
 
+func arrayLoop(){
+	list:= []int{8,10,3,5,6}
+	sum := 0
+	max := math.MinInt
+	min := math.MaxInt
 
-
-
+	for _, v := range list{
+		sum += v
+		if v < min {
+			min = v
+	}
+	if v > max {
+		max = v
+	}
+	}
+	average := float64(sum) / float64(len(list))
+	fmt.Println("Array:", list)
+	fmt.Println("Sum:", sum)
+	fmt.Println("Average:", average)
+	fmt.Println("Minimum:", min)
+	fmt.Println("Maximum:", max)
+}

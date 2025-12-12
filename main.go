@@ -87,6 +87,10 @@ mapSlice()
 revMain()
 initialMain()
 RemoveHyphenMain()
+arrayLoop()
+struct1()
+fnameMain()
+mainTag()
 }
 
 
