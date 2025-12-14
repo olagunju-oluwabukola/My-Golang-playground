@@ -75,3 +75,14 @@ func mainTag(){
 	}
 
 }
+
+type T struct {
+  a int "This is a tag"
+  b int `A raw string tag`
+  c int `key1:"value1" key2:"value2"`
+}
+
+func mainT(){
+	t := T{}
+	fmt.Println(reflect.TypeOf(t).Field(0).Tag)
+}

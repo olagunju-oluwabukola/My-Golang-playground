@@ -91,6 +91,7 @@ arrayLoop()
 struct1()
 fnameMain()
 mainTag()
+mainT()
 }
 
 
