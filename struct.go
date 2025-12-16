@@ -134,4 +134,45 @@ func anonymousStruct (){
 	structName2.firstName, structName2.lastName = "Elon", "mussk"
 	fmt.Println(structName2)
 
+
 }
+
+
+func config (){
+	serverConfig := struct{
+		HostName string
+		Ip string
+		Port int
+		Environment string
+		Credentials struct{
+			Username string
+			Password string
+		}
+	}{
+		HostName: "localhost",
+		Ip: "189.56.00.1",
+		Port: 8080,
+		Environment: "production",
+		Credentials: struct{Username string; Password string}{
+			Username: "oluwabukola",
+			Password: "1223",
+		},
+	}
+fmt.Println(serverConfig)
+
+	}
+type C struct {
+x float32
+int
+string
+}
+	func anym(){
+		c := C {3.24, 30, "Hello"}
+		fmt.Println(c.x, c.int, c.string)
+		fmt.Println(c)
+		b := new(C)
+		b.x = 21.2
+		b.int = 10
+		b.string = "new func"
+		fmt.Println(b)
+	}

@@ -94,6 +94,8 @@ mainTag()
 mainT()
 outerMain()
 anonymousStruct()
+config()
+anym()
 }
 
 
