@@ -92,6 +92,8 @@ struct1()
 fnameMain()
 mainTag()
 mainT()
+outerMain()
+anonymousStruct()
 }
 
 
