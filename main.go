@@ -96,6 +96,7 @@ outerMain()
 anonymousStruct()
 config()
 anym()
+twoPoints()
 }
 
 
