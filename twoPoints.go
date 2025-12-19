@@ -29,5 +29,5 @@ func twoPoints() {
 
 		p1.Scale(5)
 	fmt.Printf("The length of the vector p1 is: %f\n", p1.Abs() )
-	fmt.Printf("Point p1 scaled by 5 has the following coordinates: X %f - Y %f", p1.x, p1.y)
+	fmt.Printf("Point p1 scaled by 5 has the following coordinates: X %f - Y %f\n", p1.x, p1.y)
 }

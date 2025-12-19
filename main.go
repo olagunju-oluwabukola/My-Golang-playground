@@ -97,6 +97,8 @@ anonymousStruct()
 config()
 anym()
 twoPoints()
+mainRectangle()
+salaryMain()
 }
 
 
