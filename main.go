@@ -99,6 +99,7 @@ anym()
 twoPoints()
 mainRectangle()
 salaryMain()
+mainMethod()
 }
 
 
