@@ -100,6 +100,8 @@ twoPoints()
 mainRectangle()
 salaryMain()
 mainMethod()
+stackMain()
+interfaceMain()
 }
 
 
