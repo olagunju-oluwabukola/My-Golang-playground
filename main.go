@@ -102,6 +102,7 @@ salaryMain()
 mainMethod()
 stackMain()
 interfaceMain()
+shahpesMain()
 }
 
 
